@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sushidom.css">
+        <script src="sushidomjs.js"></script>
+        <title>SushiDom Menu</title>       
+    </head>
+    <body>
+        <div id="navbar">
+
+            <header>
+                <a href ='menu.html'><img src="./Img/SushidomLogo.png" width="250px" height="50px"></a>
+            </header>
+
+            <a href ='https://maps.app.goo.gl/s9ayRxCPjBRXfm786'>Menu</a>
+            <a href ='https://en.wikipedia.org/wiki/Special_military_operation'>Music</a>
+            <a href ='https://en.wikipedia.org/wiki/Federal_subjects_of_Russia'>Jobs</a>
+            <a href ='https://en.wikipedia.org/wiki/KGB'>Loyalty Program</a> 
+            <div id="nonTextHyperlink"><a href ='https://www.wikipedia.org/'><img src="./Img/list.png" alt="List" width="50px" height="50px"></a></div>
+        </div>
+
+        <main>
+            <img src="./Img/sushiBanner.png" alt="USA" width="100%" height="500px">
+            <h2>MENU</h2>
+            <p>
+                Make Your Selection from a Myriad Choice of Delectable Sushi<br>
+                (Price Includes 8% SST)
+            </p>
+            <div class = "solidifier">
+                <div class="wrapper">
+                    <button id="sushi1" onClick="callingBoth(this.id)">
+                        <img src="./Img/sushi1.jpg" alt="SUSHI" width="80%" height="200"><br>
+                        <h2>Uno</h2>
+                        <h3>Price: 999.99 &yen;</h3>
+                    </button>
+                </div>
+                <div class="wrapper">
+                    <button id="sushi2" onClick="callingBoth(this.id)">
+                        <img src="./Img/sushi2.jpg" alt="SUSHI" width="80%" height="200"><br>
+                        <h2>Uno</h2>
+                        <h3>Price: 19999.99 &yen;</h3>
+                    </button>
+                </div>
+                <div class="wrapper">
+                    <button id="sushi3" onClick="callingBoth(this.id)">
+                        <img src="./Img/sushi3.jpg" alt="SUSHI" width="80%" height="200"><br>
+                        <h2>Tres</h2>
+                        <h3>Price: 2999.99 &yen;</h3>
+                    </button>
+                </div>
+                <div class="wrapper">
+                    <button id="sushi4" onClick="callingBoth(this.id)">
+                        <img src="./Img/sushi4.jpg" alt="SUSHI" width="80%" height="200"><br>
+                        <h2>Quatro</h2>
+                        <h3>Price: 3999.99 &yen;</h3>
+                    </button>
+                </div>
+                <div class="wrapper">
+                    <img src="./Img/sushi5.jpg" alt="SUSHI" width="80%" height="200"><br>
+                    <h2>Fingo</h2>
+                </div>
+            </div>
+        </main>
+
+        <div class="orderList">
+            <img src="./Img/kopi.png" alt="order" width="100px" height="100px" onClick="orderWindow()">
+            <div id = "veilol" class = "veil">
+                <ol id="Ordered" class="promptWindow"></ol>
+            </div>
+        </div>
+
+        <div id = "veiljs" class = "veil">
+            <div id="output" class="promptWindow"></div>
+        </div>
+
+        <footer>
+            Copyright &copy; 2024. All Rights Reserved by SushiDom WebAssignment SDN BND (Registration No. 202402191111(12345-A)).<br>
+            Follow Us on<br>
+            <a href = 'https://www.facebook.com/'><img src="./Img/facebooklogo.png" alt="Facebook" width="20px" height="20px"></a>
+            <a href = 'https://www.instagram.com/'><img src="./Img/instagramlogo.png" alt="Instagram" width="20px" height="20px"></a>
+        </footer>
+    </body>
+</html>
