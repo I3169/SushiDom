@@ -44,7 +44,6 @@ function order(clicked_id){
 
   order.onclick = function(){
     if (counter > 0){
-      document.getElementById('Ordered').innerHTML = 'Ordered Item(s):'
       document.getElementById('Ordered').innerHTML += `<li>${nama[clicked_id.at(-1) - 1]} ..... ${counter}</li>`;
       counter = 0;
     }
