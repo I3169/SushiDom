@@ -11,12 +11,14 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+  const nama = ["Uziki Mashu"];
+  const description = ["This is heavenly delight","This is to scam your money"];
+
 /*Display subwindow*/
 function reply_click(clicked_id){
   var veiljs = document.getElementById("veiljs");
   /*Contains description of items, 
   the first string in the array will be the description of the first sushi in menu*/
-  const description = ["Uziki Mashu<br>This is heavenly delight","This is to scam your money"];
   
   veiljs.style.display = "block";
   
@@ -28,7 +30,7 @@ function reply_click(clicked_id){
   }
 
   document.getElementById('output').innerHTML = `<img src="./Img/${clicked_id}.jpg" alt="SUSHI">`;
-  document.getElementById('output').innerHTML += `<p>${description[clicked_id.at(-1) - 1]}</p>`;
+  document.getElementById('output').innerHTML += `<p>${nama[clicked_id.at(-1) - 1]}<br>${description[clicked_id.at(-1) - 1]}</p>`;
   document.getElementById('output').innerHTML += '<span class = "add" onClick ="itemNumber(1)">&plus;</span>'
   document.getElementById('output').innerHTML += '<span class = "minus" onClick="itemNumber(0)">&minus;</span>'
   document.getElementById('output').innerHTML += `<div id="counting" class="counting">${counter}</div>`
@@ -43,7 +45,7 @@ function order(clicked_id){
   order.onclick = function(){
     if (counter > 0){
       document.getElementById('Ordered').innerHTML = 'Ordered Item(s):'
-      document.getElementById('Ordered').innerHTML += `<li>${clicked_id} ..... ${counter}</li>`;
+      document.getElementById('Ordered').innerHTML += `<li>${nama[clicked_id.at(-1) - 1]} ..... ${counter}</li>`;
       counter = 0;
     }
     veiljs.style.display = "none";
