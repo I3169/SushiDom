@@ -1,0 +1,5 @@
+maki - 1
+gunkan - 2
+nigiri -3 
+
+drink - 9

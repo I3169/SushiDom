@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sushidom.css">
+        <script src="sushidomjs.js"></script>
+        <title>SushiDom Booking & Take Out</title> 
+    </head>
+
+    <body>
+        <div id="navbar">
+            <a href ="index.html" class = "homeHotspot"><img src="./Img/SushidomLogo.png" width="200px" height="50px"></a>
+
+            <a href ="menu.html">Menu</a>
+            <a href ="https://en.wikipedia.org/wiki/Federal_subjects_of_Russia">Music</a>
+            <a href ="booking.html">Booking & Take Out</a>
+            <a href ="https://en.wikipedia.org/wiki/KGB">Loyalty Program</a> 
+        </div>
+
+        <main>
+            <img src="./Img/sushiBanner.png" alt="USA" width="100%" height="500px">
+            <h1>Booking & Take Out</h1>
+            <button id = "bookingButton" onClick = "SelectedPage(this.id)"><img src="./Img/BookingImage.jpg" alt="List" class = "transformSize"></button>
+            <button id = "takeOutButton" onClick = "SelectedPage(this.id)"><img src="./Img/TakeOutImage.jpg" alt="List" class = "transformSize"></button>
+
+            <div id = "booking">
+                <form>
+                    <h1>Booking Informations<hr style="height:2px;border-width:0;color:gray;background-color:gray"></h1>
+
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="Name" placeholder="Your name.." required="true">
+
+                    <label for="Mail">E-mail:</label>
+                    <input type="email" id="Mail" name="Number" placeholder="Your E-mail.." required="true">
+
+                    <label for="Mail">Number of guests:</label>
+                    <input type="number" id="NumGuest" name="Numberofguest" placeholder="Number of guests.." required="true">
+
+                    <label for="branch">Branches:</label>
+                    <select id="branch" name="branch">
+                        <option value="Johor Bahru">George Town (293, Jalan Siam, 10400 George Town, Pulau Pinang)</option>
+                        <option value="Kuala Lumpur">Kuala Lumpur (514, Jln Bukit Bintang, Bukit Bintang, 55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur)</option>
+                        <option value="Kuala Lumpur">Kuching (Q199Y, Taman Supreme, 93300 Kuching, Sarawak)</option>
+                    </select>
+
+                    <label for="date">Select a date:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="timeSlot">Select a time:</label>
+                    <input type="time" id="timeSlot" name="timeSlot">
+
+                    <button class = "backButton" onClick = "SelectedPage(this.id)">Back</button>
+                    <input type="submit" value="Reserve a place" id="mySubmit">
+                </form>
+            </div>
+
+            <div id = "takeOut">
+                <h1>Pick up from our branches</h1>
+                <img src="./Img/BranchMap.png" alt="Branches" width="80%" height="500px" style = "margin-bottom: 50px;">
+                <form>
+                    <label for="branch">Branches:</label>
+                    <select id="branch" name="branch">
+                        <option value="Johor Bahru">George Town (293, Jalan Siam, 10400 George Town, Pulau Pinang)</option>
+                        <option value="Kuala Lumpur">Kuala Lumpur (514, Jln Bukit Bintang, Bukit Bintang, 55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur)</option>
+                        <option value="Kuala Lumpur">Kuching (Q199Y, Taman Supreme, 93300 Kuching, Sarawak)</option>
+                    </select>
+                </form>
+                <a href ="menu.html" style="margin: auto;"><img src="./Img/OrderIcon.png" alt="toOrder" width="150px" height="150px"></a>
+                
+                <h1 style = "padding-top: 50px;">Or deliver to your location by our partner:</h1>
+                <img src="./Img/UberEats.jpg" alt="Branches" width="20%" height="200px" style = "margin-left: 50px;">
+                <img src="./Img/FoodPanda.jpg" alt="Branches" width="20%" height="200px" style = "margin-left: 50px;">
+                <img src="./Img/GrabFood.png" alt="Branches" width="20%" height="200px" style = "margin-left: 50px;">
+                <button class = "backButton" onClick = "SelectedPage(this.id)" style = "display: block;">Back</button>
+            </div>
+        </main>
+
+        <footer>
+            Copyright &copy; 2024. All Rights Reserved by SushiDom WebAssignment SDN BND (Registration No. 202402191111(12345-A)).<br>
+            Follow Us on<br>
+            <a href = "https://www.facebook.com/"><img src="./Img/facebooklogo.png" alt="Facebook" width="20px" height="20px"></a>
+            <a href = "https://www.instagram.com/"><img src="./Img/instagramlogo.png" alt="Instagram" width="20px" height="20px"></a>
+        </footer>
+    </body>
+</html>

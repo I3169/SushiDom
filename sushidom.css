@@ -1,0 +1,255 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    padding-left: 10px;
+    padding-top: 20px;
+    float: left;
+}
+
+body {
+    margin: 0% 0%;
+}
+
+main {
+    padding: 100px 0px 25px 0px;
+    text-align: center;
+
+    p{
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 40px;
+    }
+
+    .solidifier{
+        overflow: auto;
+    }
+
+    .itemType{
+        text-align: left;
+        margin: 15px 15px;
+        font-size: 30px;
+    }
+}
+
+form{
+    padding: 0px 50px;
+    text-align: left;
+}
+
+input[type=text],input[type=time],input[type=date],input[type=number],input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit],.backButton{
+    width: 49%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover,button:hover{
+    cursor: pointer;
+    background-color: #adadad;
+}
+
+footer{
+    background-color: #ffea96;
+    height: 100px;
+    width: 100%;
+    padding-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#navbar {
+    background-color: #ffea96;
+    height: 100px;
+    top: 0;
+    position: fixed;
+    transition: top 0.3s;
+    width: 100%;
+
+    .homeHotspot{
+        margin: 25px 0px 25px 25px;
+        float: left;
+    }
+
+    a{
+        float: left;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 40px 5% 40px 5%;
+    }
+
+    a:link{
+        color: #000000;
+    }
+
+    a:hover{
+        color: #3200ae;
+    }
+
+    a:visited{
+        color: #000000;
+    }
+}
+
+#booking,#takeOut{
+    display: none;
+}
+
+#bookingButton,#takeOutButton{
+    background: none;
+    border: none;
+}
+
+#paymentButton{
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    font-size:1em;
+}
+
+.transformSize{
+    width: 500px;
+    height: 400px;
+    transition: width 0.5s,height 0.5s;
+}
+
+.transformSize:hover{
+    width: 550px;
+    height: 450px;
+    cursor: pointer;
+}
+
+.promptWindow {
+    position: fixed;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    width: 500px;
+    height: 500px;
+    font-size: 25px;
+    font-weight: 700;
+    background-image: url(./Img/PromptBackground.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+
+    img{
+        margin: 5% auto auto auto;
+        display: block;
+        height: 50%;
+    }
+
+    p, li{
+        padding-left: 10%;
+    }
+
+    button{
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+    }
+
+    .itemDescription{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: -20px;
+    }
+}
+
+.itemFrame {
+    background-color: #FFFFFF;
+    width: 300px;
+    margin: 15px 15px;
+    box-shadow: 2px 2px gray;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-radius: 25px;
+    border-width: 1px;
+    float: left;
+
+    img {
+        width: 80%;
+        height: 200px;
+        margin: 10px auto auto auto;
+    }
+
+    button{
+        background: none;
+        border: none;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    button:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+}
+
+.veil{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.add{
+    color: #5a5a5a;
+    margin-left: 20%;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.minus{
+    color: #5a5a5a;
+    margin-right: 20%;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.add:hover,.minus:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.counting{
+    text-align: center;
+}
+
+.orderList{
+    img{
+        position: fixed;
+        bottom: 5%;
+        left: 90%;
+        float: right;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+}
